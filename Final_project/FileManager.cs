@@ -2,7 +2,7 @@
 
 namespace AutoServiceApp
 {
-    // Загальна структура з публічним доступом та методами JSON
+    // Загальна структура та методами JSON
     public static class FileManager 
     {
         public static void SaveOrderJson(Order order, string filePath) 
