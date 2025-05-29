@@ -2,13 +2,12 @@
 
 namespace AutoServiceApp
 {
-    public class Order
+    public class Order // Клас замовлення зі списком 
     {
-        public ArrayList SelectedServices { get; set; } = new ArrayList();
-
+        public ArrayList SelectedServices { get; set; } = new ArrayList(); // Список послуг
         public decimal TotalPrice
         {
-            get
+            get // обчислення вартості
             {
                 decimal total = 0;
                 foreach (Service s in SelectedServices)
