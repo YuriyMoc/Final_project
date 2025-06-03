@@ -2,8 +2,20 @@ using AutoServiceApp;
 
 namespace FinalProjectTests
 {
-    public class UnitTest1
+    public class OrderTests
     {
+        [Fact]
+        public void SelectedServices_ShouldInitializeAsEmptyList()
+        {
+            // Arrange
+            var order = new Order();
+            // Act
+            var services = order.SelectedServices;
+            // Assert
+            Assert.NotNull(services);
+            Assert.Empty(services);
+        }
+    
         [Fact]
         public void TotalPrice_ShouldReturnSumOfAllServicePrices()
         {
@@ -21,3 +33,4 @@ namespace FinalProjectTests
         }
     }
 }
+

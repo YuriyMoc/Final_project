@@ -7,6 +7,7 @@
 
         public Service(string name, decimal price)
         {
+           
             Name = name;
             Price = price;
         }

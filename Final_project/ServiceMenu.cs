@@ -220,7 +220,7 @@ namespace AutoServiceApp
             FileManager.SaveOrderJson(order, "order.json");
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"\n✅ Замовлення збережено. Ми зателефонуємо на номер: {phone}");
+            Console.WriteLine($"\n✅ Замовлення збережено. Ми зателефонуємо на номер: {phone} , та назначимо час");
             Console.WriteLine($"Загальна сума: {order.TotalPrice} грн");
             Console.ResetColor();
             Console.ReadKey();
